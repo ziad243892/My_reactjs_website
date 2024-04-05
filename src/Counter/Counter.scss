@@ -1,0 +1,44 @@
+@import '../SCSS/variable';
+.counter {
+    height: 100vh;
+    background-image: url("../images/counter_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    color: $white-color;
+   &__date {
+       padding: 14px 10px 0px 10px;
+       border: 1px solid $white-color;
+       display: inline-block;
+       margin: 0 auto;
+   }
+
+   .d-flex {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       div {
+           margin-left: 20px;
+           margin-right: 20px;
+           p:nth-child(1) {
+            border: 2px solid $white-color;
+            width: 150px;
+            font-family: 'Digital-7';
+            font-size: 50px;
+           }
+           p {
+             font-size: 32px;
+           }
+       }
+   }
+   &__footer {
+       position: absolute;
+       bottom: 0px;
+       width: 100%;
+       background-color: rgba($color: $balck-color, $alpha: 0.8);
+       padding-top: 12px;
+   }
+}

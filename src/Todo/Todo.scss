@@ -1,0 +1,242 @@
+.todo {
+	display: flex;
+
+	.left-part {
+		width: 50%;
+		height: 100vh;
+		background-image: url("../images/weather_1.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		padding: 0px 15px;
+		position: relative;
+		border-radius: 0px 50px 50px 0px;
+		&::before {
+		content: '';
+		opacity: 0.6;
+		transition: opacity 300ms;
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		left: 0;
+		right: 0;
+		background: #0B3B3F;
+		border-radius: 0px 50px 50px 0px;
+		}
+
+		&__logo {
+			font-size: 43px;
+			color: white;
+			position: absolute;
+			top: 63px;
+			left: 34px;
+		}
+
+		&__location {
+			width: 327px;
+			height: 72px;
+			background-color: #79817E;
+			color: white;
+			border-radius: 19px;
+			position: absolute;
+			top: 60px;
+			right: 34px;
+			display: flex;
+			align-items: center;
+
+			svg {
+				font-size: 25px;
+				margin-inline-start: 28px;
+			}
+
+			div {
+				margin-inline-start: 15px;
+
+				p:nth-child(1) {
+					font-size: 18px;
+					position: relative;
+					top: 2px;
+				}
+
+				p:nth-child(2) {
+					font-size: 20px;
+					position: relative;
+					bottom: 2px;
+				}
+			}
+		}
+
+		&__search {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			color: white;
+
+			p {
+				font-size: 35px;
+			}
+
+			div.sep {
+				width: 201px;
+				height: 9px;
+				background-color: white;
+				margin: 0 auto;
+				border-radius: 5px;
+			}
+
+			input {
+				width: 85%;
+				border-radius: 8px;
+				border: 1px solid #8CADAC;
+				background-color: #8CADAC;
+				font-size: 18px;
+				color: white;
+				padding: 10px 10px 8px 10px;
+				margin-top: 33px;
+
+				&:focus {
+					outline: none;
+				}
+
+				&::placeholder {
+					color: white;
+				}
+			}
+
+			svg {
+				font-size: 33px;
+				margin-inline-start: 10px;
+				position: relative;
+				top: 5px;
+				cursor: pointer;
+			}
+
+			.fa-magnifying-glass {
+				font-size: 22px;
+				position: absolute;
+				right: 12.5%;
+				top: 57%;
+			}
+		}
+	}
+
+	.right-part {
+		width: 50%;
+		padding: 0px 50px;
+		color: #000000;
+		height: 100vh;
+		overflow: auto;
+
+		p.title {
+			font-size: 70px;
+			font-weight: bold;
+			text-align: start;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-bottom: 0px;
+		}
+
+		&__card {
+			margin: 0 auto;
+			box-shadow: 0px 3px 6px #00000029;
+			border-radius: 14px;
+			padding: 50px 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			p {
+				margin-bottom: 0px;
+			}
+
+			div {
+				.dgree {
+					font-size: 70px;
+
+					svg {
+						color: #F7F71A;
+						margin-inline-start: 5px;
+					}
+				}
+
+				.status {
+					font-size: 52px;
+					position: relative;
+					bottom: 22px;
+				}
+
+				.date {
+					font-size: 21px;
+					position: relative;
+					bottom: 19px;
+				}
+			}
+
+			.sep {
+				width: 4px;
+				height: 270px;
+				background-color: #CECECE;
+				border-radius: 2px;
+				margin: 0px 50px;
+			}
+
+			.info {
+				p {
+					font-size: 18px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+
+		.slider {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-60%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: white;
+			box-shadow: 0px 3px 6px #00000029;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			cursor: pointer;
+			font-size: 24px;
+		}
+
+		.slider-first {
+			left: -30px;
+		}
+
+		.slider-second {
+			right: -30px;
+		}
+
+		&__sepcard {
+			width: 30%;
+			box-shadow: 0px 3px 6px #00000029;
+			border-radius: 14px;
+			padding: 20px;
+			font-size: 18px;
+			align-items: center;
+			margin-bottom: 10px;
+
+			svg {
+				color: #F7F71A;
+			}
+
+			.dgree {
+				font-size: 40px;
+			}
+
+			.status {
+				font-size: 24px;
+				font-weight: bold;
+			}
+		}
+	}
+}

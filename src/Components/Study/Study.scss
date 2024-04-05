@@ -1,0 +1,18 @@
+@import '../../SCSS/variable';
+
+.study {
+    padding: 90px 50px;
+}
+
+.swiper-horizontal>.swiper-scrollbar {
+    display: none;
+}
+
+.swiper-slide {
+    img {
+        width: 270px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}

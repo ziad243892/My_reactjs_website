@@ -1,0 +1,53 @@
+@import '../../SCSS/variable';
+.ido {
+    background-color: $main-color;
+    padding: 130px 50px;
+    p {
+        line-height: 28px;
+    }
+    &__face {
+        width: 100%;
+        height: 400px;
+        background-image: url("../../images/Face.jpg");
+        margin: 35px auto;
+        position: relative;
+        &--iconpart {
+            position: absolute;
+            bottom: 18px;
+            right: 18px;
+                .svg-inline--fa {
+                margin-left: 22px;
+                color: #fefefe;
+                margin-top: 0px;
+                cursor: pointer;
+                transition: all .4s;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+.canIdo {
+    padding-top: 50px;
+    padding-left: 160px;
+    &__sep {
+        width: 200px;
+        height: 4px;
+        background-color: $white-color;
+        position: relative;
+        left: 35px;
+        margin-top: 5px;
+    } 
+    .svg-inline--fa {
+        width: 55px;
+        height: auto;
+    }
+    p{
+        line-height: 22px;  
+    }
+    h3 {
+        margin-bottom: 0px;
+    }
+}

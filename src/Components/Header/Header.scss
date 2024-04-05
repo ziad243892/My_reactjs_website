@@ -1,0 +1,109 @@
+@import '../../SCSS/variable';
+
+.header {
+
+	&__info,
+	&__menu {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 95vh;
+	}
+
+	&__info {
+		background-image: url("../../images/headerImg_1.jpg");
+
+		&--link {
+			color: $main-color;
+			cursor: pointer;
+			margin-top: 55px;
+		}
+
+		span {
+			bottom: 148px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+	}
+
+	&__menu {
+		background-image: url("../../images/headerImg_2.jpg");
+
+		&--link {
+			color: $main-color;
+			cursor: pointer;
+			margin-top: 55px;
+		}
+        &--menu {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            top: 30px;
+            right: 0px;
+            background-color: $white-color;
+            border-radius: 50% 0% 0% 50%;
+            box-shadow: 3px 3px 3px 3px rgba(0,0,0, 0.25);
+            cursor: pointer;
+            svg {
+                font-size: 24px;
+                position: relative;
+                left: 27px;
+                top: 20px;
+            }
+        }
+
+		span {
+			bottom: 148px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			text-align: end;
+		}
+
+		div {
+			float: right;
+		}
+	}
+
+	h2 {
+		color: $main-color;
+		margin-top: 31px;
+	}
+
+	h1,
+	h3 {
+		color: $more-white-color;
+	}
+
+	h1 {
+		margin-bottom: 55px;
+	}
+
+}
+
+.position-relative {
+	.hover-style-two, .hover-style {
+		width: 0px;
+		height: 5px;
+		background-color: $white-color;
+		transition: all .4s;
+	}
+}
+
+.iconpart {
+	.svg-inline--fa {
+		margin-left: 45px;
+		color: $more-white-color;
+		margin-top: 55px;
+		cursor: pointer;
+        transition: all .4s;
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
+
+.header__info--link:hover + .hover-style,
+.header__menu--link:hover + .hover-style-two {
+    width: 220px;
+}
